@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
